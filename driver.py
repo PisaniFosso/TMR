@@ -12,7 +12,6 @@ class Driver(object):
     for index, interval in enumerate(intervals):
       results = [module.getResult(interval) for module in self._modules] 
       
-      
       from collections import defaultdict
       votes = dict()
       print('result |\t', end='')
@@ -34,7 +33,7 @@ class Driver(object):
         if results[i]==winner:
           module.receiveFeedback({'status':'ok'})
         else:
-          module.receiveFeedback({'status':'error', good_value:winner})
+          module.receiveFeedback({'status':'error', "goodValue":winner})
         
       
     
