@@ -16,9 +16,9 @@ class Driver(object):
       self._intervals.append(interval)
       for i, module in enumerate(self._modules):
         if results[i]==winner:
-          module.giveFeedback({status:'ok'})
+          module.receiveFeedback({status:'ok'})
         else:
-          module.giveFeedback({status:'error', goodvalue:winner})
+          module.receiveFeedback({status:'error', goodvalue:winner})
         
       
     
