@@ -4,8 +4,8 @@ class Driver(object):
     self._intervals  = []
     self._values     = []
     print('modules |\t', end='')
-    for i, _ in enumerate(modules):
-      print('#%d\t'.format(i), end='')
+    for i, m in enumerate(modules):
+      print('#'+m.__str__()+'\t'.format(i), end='')
     print('Winner')
   def test(self, intervals):
     

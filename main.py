@@ -1,4 +1,4 @@
-from modules import DirectMethod, WilsonMethod
+from modules import DirectMethod, WilsonMethod, EratostheneMethod
 from driver import Driver 
 
 
@@ -6,7 +6,8 @@ from driver import Driver
 
 mod1 = DirectMethod()
 mod2 = WilsonMethod()
-moduleList = [mod1,mod2]
+mod3 = EratostheneMethod()
+moduleList = [mod1, mod2, mod3]
 
 driver = Driver(moduleList)
 
