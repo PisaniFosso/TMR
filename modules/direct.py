@@ -15,12 +15,12 @@ class DirectMethod(object):
   
   def receiveFeedback(self, feedback):
     if feedback['status']=='error':
-      self._lastValue = feedback['goodvalue']
+      self._lastValue = feedback['goodValue']
        
   @staticmethod
   def isPrime(num):
-    from math import sqrt
-    racine = int(sqrt(num))
+    from math import sqrt, ceil
+    racine = ceil(sqrt(num))
     if racine*racine==num:
       return False
     for i in range(2, racine):
