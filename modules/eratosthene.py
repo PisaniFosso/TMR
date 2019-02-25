@@ -3,8 +3,8 @@ class EratostheneMethod():
 	def __str__(self):
 		return "Eratos"
 	def __init__(self, prime = 0, begin= 2):
-		self.prime = prime
-		self.begin = begin
+		self._lastValue = prime
+		self._lastInterval = begin
 		self.history = [begin]
 
 	def isPrime(self, x):
@@ -19,9 +19,9 @@ class EratostheneMethod():
 			if self.isPrime(x):
 				history.append(x)
 		self.history += history
-		self.prime += len(history)
-		return self.prime
+		self._lastValue += len(history)
+		return self._lastValue
 
 	def receiveFeedback(self, feedBack):
 		if feedBack["status"] == "error":
-			self.prime = feedBack["goodValue"] 
+			self._lastValue = feedBack["goodValue"] 
