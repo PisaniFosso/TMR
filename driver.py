@@ -8,7 +8,7 @@ class Driver(object):
       print(str(m)+'\t'.format(i), end='')
     print('Winner')
   def setModule(i, value=None, interval=None):
-    if i < len(self.°modules):
+    if i < len(self.modules):
       if value is not None:
         self._modules[i]._lastValue = value
       if interval is not None:
