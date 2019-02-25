@@ -1,5 +1,5 @@
 # TMR
-Triple modulo redundncy find the number of prime numbers within an interval
+Triple modular redundncy find the number of prime numbers within an interval
 
 
 
@@ -30,6 +30,32 @@ For test purpose you can edit a module last value
 driver.setModule(0, value=10)
 # after 2 execution the value will be automatically corrected
 ```
+To create your own module you should create a class tha implemente getResult and receiveFeedback and have _lastValue and _lastInterval as attributes
+```python
+
+class Method(Object):
+	"""docstring for wilson"""
+	def __str__(self):
+		return "methode name"
+	def __init__(self,lastValue = 0, lastInterval=2):
+		self._lastValue = lastValue
+		self._lastInterval = lastInterval
+
+	def getResult(self, interval):
+		prime = 0
+		for i in range(self._lastInterval, end+1):
+			if isPrime(i):
+				prime += 1
+		self._lastValue += prime
+		self._lastInterval = end+1
+		return self._lastValue
+
+	def receiveFeedback(self, feedBack):
+		if feedBack["status"] == "error":
+			self._lastValue = feedBack["goodValue"] 
+
+```
+
 
 # Contributors
 
