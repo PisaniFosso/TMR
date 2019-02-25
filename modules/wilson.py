@@ -3,8 +3,8 @@ class WilsonMethod():
 	"""docstring for wilson"""
 	def __str__(self):
 		return "Wilson"
-	def __init__(self, begin=2):
-		self.prime = 0
+	def __init__(self,prime = 0, begin=2):
+		self.prime = prime
 		self.begin = begin
 
 	def Factoriel(self, N):
