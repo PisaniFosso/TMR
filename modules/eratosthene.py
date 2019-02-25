@@ -2,8 +2,8 @@ class EratostheneMethod():
 	"""docstring for Ératosthène"""
 	def __str__(self):
 		return "Eratos"
-	def __init__(self, begin= 2):
-		self.prime = 2
+	def __init__(self, prime = 0, begin= 2):
+		self.prime = prime
 		self.begin = begin
 		self.history = [begin]
 
