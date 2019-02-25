@@ -1,7 +1,7 @@
 class DirectMethod(object):
   def __str__(self):
     return "Direct"
-  def __init__(self, last_value=0, last_interval=2):
+  def __init__(self, last_value=0, last_interval=1):
     self._lastValue = last_value    
     self._lastInterval = last_interval
 
