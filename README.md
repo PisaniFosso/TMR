@@ -1,5 +1,5 @@
 # TMR
-Triple modular redundncy find the number of prime numbers within an interval
+Triple modular redundancy find the number of prime numbers within an interval
 
 
 
