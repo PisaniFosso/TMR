@@ -4,7 +4,7 @@ Triple modular redundancy find the number of prime numbers within an interval
 
 
 ## Features
-
+In computing, triple modular redundancy, sometimes called triple-mode redundancy (TMR) is a fault-tolerant form of N-modular redundancy, in which three systems perform a process and that result is processed by a majority-voting system to produce a single output. If any one of the three systems fails, the other two systems can correct and mask the fault.
 
 ## Usage
 
